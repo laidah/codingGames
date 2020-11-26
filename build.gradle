@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'chirkova'
+version '1'
+
+sourceSets {
+    main.java.srcDirs = ['src/main/java']
+    main.resources.srcDirs = ['src/main/resources']
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'application'
+
+mainClassName = "lesson3.Main"
+
+dependencies {
+
+}
