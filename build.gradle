@@ -6,8 +6,8 @@ group 'chirkova'
 version '1'
 
 sourceSets {
-    main.java.srcDirs = ['src/main/java']
-    main.resources.srcDirs = ['src/main/resources']
+    main.java.srcDirs = ['src']
+    main.resources.srcDirs = ['src']
 }
 
 repositories {
@@ -16,8 +16,12 @@ repositories {
 
 apply plugin: 'application'
 
-mainClassName = "lesson3.Main"
+mainClassName = "ghostLegs.Solution"
 
 dependencies {
 
+}
+
+run {
+    standardInput = System.in
 }
